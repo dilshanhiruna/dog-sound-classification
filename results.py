@@ -45,16 +45,16 @@ def output(filename):
         if notifications["on"]:
 
             if notifications["aggressiveBarks"] and  max_key[0] == "noOfAggressiveChunks":
-                    send_push_message("Your dog is aggressively barking!!!")
+                    send_push_message("Your dog is aggressively barking!!! Open the app to listen to the audio")
 
             if notifications["regularBarks"] and max_key[0] == "noOfNonAggressiveChunks" :
-                    send_push_message("Your dog is barking")
+                    send_push_message("Your dog is barking. Open the app to listen to the audio")
             
             if notifications["growling"] and max_key[0] == "noOfGrowlingChunks" :
-                    send_push_message("Your dog is aggressive, it's growling!!!")
+                    send_push_message("Your dog is aggressive, it's growling!!! Open the app to listen to the audio")
             
             if notifications["whinning"] and max_key[0] == "noOfWhinningChunks" :
-                    send_push_message("Your dog is anxious, it's whinning")
+                    send_push_message("Your dog is anxious, it's whinning !!! Open the app to listen to the audio")
 
 
         if saveEventOnDB["on"]:
